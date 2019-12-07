@@ -151,9 +151,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BlockDump.h" />
+    <ClInclude Include="BlockGrep.h" />
+    <ClInclude Include="BlockRead.h" />
+    <ClInclude Include="BlockReplace.h" />
+    <ClInclude Include="BlockSort.h" />
+    <ClInclude Include="BlockWrite.h" />
+    <ClInclude Include="definitions.h" />
+    <ClInclude Include="FileWorker.h" />
+    <ClInclude Include="ICalculator.h" />
+    <ClInclude Include="IParser.h" />
+    <ClInclude Include="IWorker.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BlockDump.cpp" />
+    <ClCompile Include="BlockGrep.cpp" />
+    <ClCompile Include="BlockRead.cpp" />
+    <ClCompile Include="BlockReplace.cpp" />
+    <ClCompile Include="BlockSort.cpp" />
+    <ClCompile Include="BlockWrite.cpp" />
+    <ClCompile Include="FileWorker.cpp" />
+    <ClCompile Include="ICalculator.cpp" />
+    <ClCompile Include="IParser.cpp" />
+    <ClCompile Include="IWorker.cpp" />
     <ClCompile Include="lab2_WorkflowExecutor.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
