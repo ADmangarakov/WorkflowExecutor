@@ -8,7 +8,7 @@ BlockRead::BlockRead(std::string const& fileName)
 }
 
 
-Text& BlockRead::Process(std::vector<std::string>& text)
+Text& BlockRead::Process(Text& text)
 {
 	return Read(text);
 }

@@ -9,13 +9,15 @@ BlockGrep::BlockGrep(std::string const& word):
 
 Text & BlockGrep::Process(Text & text)
 {
+	Text* greppedText = new Text;
 	for (auto it = text.begin(); it != text.end(); ++it) {
 		size_t pos = it->find(word_);
-		if (pos == std::string::npos) {
-			text.erase(it);
+		if (pos != std::string::npos) {
+			greppedText->push_back(*it);
 		}
 	}
-	return text;
+	text.clear();
+	return *greppedText;
 }
 
 

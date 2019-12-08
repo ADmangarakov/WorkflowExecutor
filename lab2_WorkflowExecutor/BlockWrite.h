@@ -4,9 +4,11 @@
 class BlockWrite :
 	public IWorker, public FileWorker
 {
+	BlockWrite(BlockWrite const& write);
+	BlockWrite& operator=(BlockWrite const& write) {}
 public:
 	BlockWrite(std::string const& fileName);
-	void Process(std::vector<std::string>& text);
+	Text& Process(Text& text);
 	~BlockWrite();
 };
 

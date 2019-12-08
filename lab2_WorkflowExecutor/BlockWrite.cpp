@@ -7,9 +7,11 @@ BlockWrite::BlockWrite(std::string const& fileName)
 {
 }
 
-void BlockWrite::Process(std::vector<std::string>& text)
+Text& BlockWrite::Process(Text& text)
 {
 	Write(text);
+	text.clear();
+	return text;
 }
 
 

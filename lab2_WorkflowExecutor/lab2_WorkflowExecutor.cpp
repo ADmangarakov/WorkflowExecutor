@@ -1,7 +1,9 @@
 ﻿#include "pch.h"
 #include <iostream>
+#include "Calculator.h"
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	Calculator calc(__argv[1]);
+	calc.Calculate();
 }

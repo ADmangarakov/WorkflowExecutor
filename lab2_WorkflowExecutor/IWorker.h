@@ -1,8 +1,11 @@
 #pragma once
+
+#include "definitions.h"
+
 struct IWorker
 {
 	IWorker();
-	virtual void Process() = 0;
+	virtual Text& Process(std::vector<std::string>& text) = 0;
 	virtual ~IWorker();
 };
 
