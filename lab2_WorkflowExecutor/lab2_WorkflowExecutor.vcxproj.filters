@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Blocks">
+      <UniqueIdentifier>{16a62f3f-d65f-4c68-8750-d04a0ef046e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Blocks">
+      <UniqueIdentifier>{6642beee-c659-4d14-a261-7fbf4554fc8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\BadInstructions">
+      <UniqueIdentifier>{94ac60ca-bcd2-458a-87ea-4d559477055c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\GoodInstructions">
+      <UniqueIdentifier>{01f5a902-ea65-4aae-b77f-03e429d27771}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -27,28 +39,7 @@
     <ClInclude Include="ICalculator.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="BlockRead.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="BlockWrite.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="FileWorker.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="BlockGrep.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="definitions.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="BlockReplace.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="BlockSort.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="BlockDump.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Parser.h">
@@ -56,6 +47,27 @@
     </ClInclude>
     <ClInclude Include="Calculator.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockDump.h">
+      <Filter>Файлы заголовков\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockGrep.h">
+      <Filter>Файлы заголовков\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockRead.h">
+      <Filter>Файлы заголовков\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockReplace.h">
+      <Filter>Файлы заголовков\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockSort.h">
+      <Filter>Файлы заголовков\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockWrite.h">
+      <Filter>Файлы заголовков\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="FileWorker.h">
+      <Filter>Файлы заголовков\Blocks</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -74,32 +86,88 @@
     <ClCompile Include="ICalculator.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="BlockRead.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="BlockWrite.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="FileWorker.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="BlockGrep.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="BlockReplace.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="BlockSort.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="BlockDump.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Parser.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Calculator.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="BlockDump.cpp">
+      <Filter>Исходные файлы\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockWrite.cpp">
+      <Filter>Исходные файлы\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockGrep.cpp">
+      <Filter>Исходные файлы\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockRead.cpp">
+      <Filter>Исходные файлы\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockReplace.cpp">
+      <Filter>Исходные файлы\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockSort.cpp">
+      <Filter>Исходные файлы\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="FileWorker.cpp">
+      <Filter>Исходные файлы\Blocks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="bad\in.txt">
+      <Filter>Файлы ресурсов\BadInstructions</Filter>
+    </Text>
+    <Text Include="bad\workflow_1.txt">
+      <Filter>Файлы ресурсов\BadInstructions</Filter>
+    </Text>
+    <Text Include="bad\workflow_2.txt">
+      <Filter>Файлы ресурсов\BadInstructions</Filter>
+    </Text>
+    <Text Include="bad\workflow_3.txt">
+      <Filter>Файлы ресурсов\BadInstructions</Filter>
+    </Text>
+    <Text Include="bad\workflow_4.txt">
+      <Filter>Файлы ресурсов\BadInstructions</Filter>
+    </Text>
+    <Text Include="bad\workflow_6.txt">
+      <Filter>Файлы ресурсов\BadInstructions</Filter>
+    </Text>
+    <Text Include="bad\workflow_8.txt">
+      <Filter>Файлы ресурсов\BadInstructions</Filter>
+    </Text>
+    <Text Include="good\workflow_1.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
+    <Text Include="good\workflow_2.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
+    <Text Include="good\workflow_3.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
+    <Text Include="good\workflow_4.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
+    <Text Include="good\workflow_5.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
+    <Text Include="good\in1.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
+    <Text Include="good\in2.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
+    <Text Include="good\in3_1.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
+    <Text Include="good\in3_2.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
+    <Text Include="good\in4.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
+    <Text Include="good\in5.txt">
+      <Filter>Файлы ресурсов\GoodInstructions</Filter>
+    </Text>
   </ItemGroup>
 </Project>

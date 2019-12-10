@@ -14,7 +14,7 @@ Text & BlockReplace::Process(Text & text)
 		size_t pos = it->find(wordf_);
 		while (pos != std::string::npos) {
 			it->replace(pos, wordf_.length(), wordr_);
-			pos = it->find(wordf_);						
+			pos = it->find(wordf_, pos+wordr_.length());						
 		}
 	}
 	return text;

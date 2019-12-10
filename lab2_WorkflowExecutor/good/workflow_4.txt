@@ -1,0 +1,7 @@
+desc
+0 = readfile good/in4.txt
+1 = replace ab abab
+2 = replace test good
+3 = replace bigtext 0
+4 = writefile good/out4.txt
+csed

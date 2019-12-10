@@ -19,6 +19,10 @@ auto Parser::BlockInVect(Text &rawInstr, std::vector<IWorker *> &blocks)
 	auto it = rawInstr.begin();
 	++it;
 	for (; it->find("csed") == std::string::npos; ++it) {
+		size_t posEq = it->find("=");
+		if (posEq == std::string::npos) {
+			throw std::logic_error("Bad block description");
+		}
 		size_t blockNumber = std::stoi(it->substr(0, it->find(' '))); //get ID
 		it->erase(0, it->find(' ') + 3);
 
@@ -46,8 +50,11 @@ auto Parser::BlockInVect(Text &rawInstr, std::vector<IWorker *> &blocks)
 		else if (blockName == "dump") {
 			newWorker = new BlockDump(param);
 		}
+		else {
+			throw std::logic_error("Bad block name");
+		}
 		if (blocks.capacity() < blockNumber + 1) {
-			blocks.resize(blockNumber + 1);
+			blocks.resize(blockNumber + 2);
 		}
 		blocks[blockNumber] = newWorker;
 	}
@@ -73,9 +80,18 @@ std::list<IWorker*>& Parser::Parse()
 		while (it->find("->") != std::string::npos) {
 			size_t number = stoi(it->substr(0, it->find("->")));
 			it->erase(0, it->find("->") + 2);
+			if (number > blocks.capacity()-1) {
+				throw std::logic_error("This block does'n exist!");
+			}
 			instructions->push_back(blocks[number]);
 		}
-		size_t number = stoi(it->substr(0, it->length()));
+		size_t number = 0;
+		try {
+			number = stoi(it->substr(0, it->length()));
+		}
+		catch (const std::exception&) {
+			std::cerr << "Wrong shame structure!" << std::endl;
+		}
 		instructions->push_back(blocks[number]);
 	}
 	if (dest_ != "") {

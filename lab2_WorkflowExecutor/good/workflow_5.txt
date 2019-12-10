@@ -1,0 +1,7 @@
+desc
+0 = readfile good/in5.txt
+1 = replace Du du
+2 = grep du
+3 = writefile good/out5.txt
+csed
+0 -> 1 -> 2 -> 3

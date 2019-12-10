@@ -1,5 +1,6 @@
 desc
 0 = readfile bad/in.txt
 1 = writefile bad/out.txt
+0 = sort
 csed
-0 -> 2 -> 1
+0 -> 1

@@ -187,6 +187,26 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="bad\in.txt" />
+    <Text Include="bad\workflow_1.txt" />
+    <Text Include="bad\workflow_2.txt" />
+    <Text Include="bad\workflow_3.txt" />
+    <Text Include="bad\workflow_4.txt" />
+    <Text Include="bad\workflow_6.txt" />
+    <Text Include="bad\workflow_8.txt" />
+    <Text Include="good\in1.txt" />
+    <Text Include="good\in2.txt" />
+    <Text Include="good\in3_1.txt" />
+    <Text Include="good\in3_2.txt" />
+    <Text Include="good\in4.txt" />
+    <Text Include="good\in5.txt" />
+    <Text Include="good\workflow_1.txt" />
+    <Text Include="good\workflow_2.txt" />
+    <Text Include="good\workflow_3.txt" />
+    <Text Include="good\workflow_4.txt" />
+    <Text Include="good\workflow_5.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

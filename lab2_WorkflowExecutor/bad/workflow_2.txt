@@ -1,5 +1,5 @@
-desc
+dessssssssc
 0 = readfile bad/in.txt
 1 = writefile bad/out.txt
 csed
-0 -> 2 -> 1
+0 -> 1

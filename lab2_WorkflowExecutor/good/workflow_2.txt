@@ -1,0 +1,6 @@
+desc
+0 = readfile good/in2.txt
+1 = sort
+2 = writefile good/out2.txt
+csed
+0 -> 1 -> 2
